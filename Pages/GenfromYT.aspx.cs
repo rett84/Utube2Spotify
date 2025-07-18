@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using PlayListCreator_FW.Classes;
 using PlayListCreator_FW.Classes.Spotify;
+using PlayListCreator_FW.Classes.YouTube;
 using System.Net;
 using Newtonsoft.Json;
 using System.Text;
@@ -18,9 +19,9 @@ namespace PlayListCreator_FW.Pages
 {
     public partial class GenfromYT : System.Web.UI.Page
     {
-        private string apiKeyYT = "AIzaSyBGkNKBhpwrSkK9E5pQvkOz4kYB57vPA9M";
-        string clientIDSpotify = "474bbf92a71d4424bcc40f9d392fce43";
-        string clientSecretSpotify = "3b4859f4df4546c2b09a542bbf95aba8";
+        private string apiKeyYT = PlayListCreator_FW.Properties.Settings.Default.apiKeyYT;
+        private string clientIDSpotify = PlayListCreator_FW.Properties.Settings.Default.clientIDSpotify;
+        private string clientSecretSpotify = PlayListCreator_FW.Properties.Settings.Default.clientSecretSpotify;
         private static bool ismobile = false;
         private int countAdded = 0;
 
@@ -39,10 +40,11 @@ namespace PlayListCreator_FW.Pages
                 Response.Redirect("~/Pages/GenfromYTMobile.aspx");
             }
 
-            string code = Request.QueryString["code"];          
-            
+            string code = Request.QueryString["code"];
+
             var context = GlobalHost.ConnectionManager.GetHubContext<UpdateCount>();
             string connectionID = string.Empty;
+
             if (Session["connectionIDSigR"] != null)
                 connectionID = Session["connectionIDSigR"].ToString();
 

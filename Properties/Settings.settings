@@ -1,6 +1,15 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PlayListCreator_FW.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="apiKeyYT" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AIzaSyBGkNKBhpwrSkK9E5pQvkOz4kYB57vPA9M</Value>
+    </Setting>
+    <Setting Name="clientIDSpotify" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">474bbf92a71d4424bcc40f9d392fce43</Value>
+    </Setting>
+    <Setting Name="clientSecretSpotify" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3b4859f4df4546c2b09a542bbf95aba8</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

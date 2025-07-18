@@ -22,5 +22,32 @@ namespace PlayListCreator_FW.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("AIzaSyBGkNKBhpwrSkK9E5pQvkOz4kYB57vPA9M")]
+        public string apiKeyYT {
+            get {
+                return ((string)(this["apiKeyYT"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("474bbf92a71d4424bcc40f9d392fce43")]
+        public string clientIDSpotify {
+            get {
+                return ((string)(this["clientIDSpotify"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("3b4859f4df4546c2b09a542bbf95aba8")]
+        public string clientSecretSpotify {
+            get {
+                return ((string)(this["clientSecretSpotify"]));
+            }
+        }
     }
 }

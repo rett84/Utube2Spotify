@@ -268,7 +268,6 @@
     <Content Include="Images\about_me.png" />
     <Content Include="Images\songs.png" />
     <Content Include="Pages\About.aspx" />
-    <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -335,6 +334,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="Classes\UpdateCount.cs" />
+    <Compile Include="Classes\YouTube\ValidateYoutubeURL.cs" />
     <Compile Include="Pages\About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -350,13 +350,6 @@
     <Compile Include="Classes\Spotify\GetSpotifyUserToken.cs" />
     <Compile Include="Classes\Spotify\Yt2Spotify.cs" />
     <Compile Include="Classes\YouTube\YouTubeList.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Classes\YouTube\GetPlaylistYT.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
